@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Mica Boye – multimediedesignstuderende med interesse for visuelt design, content, UX/UI og digitale oplevelser."
+    />
+    <title>Mica Boye — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Gå til forsiden"
+        >Mica Boye</a
+      >
+      <nav class="nav" id="nav" aria-label="Primær navigation">
+        <a href="projekter.html">Projekter</a>
+        <a href="om-mig.html">Om mig</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Åbn menu"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+    </header>
+
+    <main>
+      <section class="hero hero-home section-pad">
+        <div class="hero-home-grid">
+          <div class="hero-home-copy reveal">
+            <p class="eyebrow">Multimediedesigner · Portfolio</p>
+
+            <h1 class="hero-name">Mica<br />Boye</h1>
+
+            <h2>Jeg skaber visuelle og digitale oplevelser.</h2>
+
+            <p class="hero-home-lead">
+              Jeg er multimediedesignstuderende med særlig interesse for visuelt
+              design, content og UX/UI. Jeg kan godt lide at udvikle idéer og
+              skabe løsninger, hvor det visuelle udtryk og den gode
+              brugeroplevelse går hånd i hånd.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn hero-primary" href="projekter.html"
+                >Se mine projekter</a
+              >
+              <a class="hero-text-link" href="om-mig.html">Læs mere om mig</a>
+            </div>
+          </div>
+
+          <div class="hero-home-portrait reveal">
+            <div class="image-box hero-portrait-image">
+              <img src="images/portrait.jpg" alt="Portræt af Mica Boye" />
+              <div class="image-fallback" aria-hidden="true">
+                <span>Indsæt portrætbillede</span>
+                <small>images/portrait.jpg</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIDT OM MIG -->
+      <section class="home-about-feature section-pad reveal">
+        <div class="home-about-feature-image image-box">
+          <img src="images/about.jpg" alt="Portræt af Mica Boye" />
+          <div class="image-fallback" aria-hidden="true">
+            <span>Indsæt billede</span>
+            <small>images/about.jpg</small>
+          </div>
+        </div>
+
+        <div class="home-about-feature-copy">
+          <p class="eyebrow">Lidt om mig</p>
+          <h2>Fra idé til færdigt<br />design.</h2>
+
+          <p>
+            Jeg kan godt lide processen fra den første idé til det færdige
+            visuelle og digitale udtryk. For mig handler godt design både om,
+            hvordan noget ser ud, og hvordan det fungerer i praksis.
+          </p>
+
+          <p>
+            Jeg er især optaget af den visuelle del af processen og holder af at
+            arbejde med content, typografi, farver og detaljer, der får det
+            samlede udtryk til at hænge sammen.
+          </p>
+
+          <a class="btn" href="om-mig.html">Læs mere om mig</a>
+        </div>
+      </section>
+
+      <!-- UDVALGTE PROJEKTER -->
+      <section
+        class="home-selected-projects home-selected-projects--editorial section-pad reveal"
+        id="projekter"
+      >
+        <div class="home-selected-head">
+          <div>
+            <p class="eyebrow">Udvalgte projekter</p>
+            <h2>Tre projekter. Tre forskellige universer.</h2>
+          </div>
+
+          <a class="btn" href="projekter.html">Se alle projekter</a>
+        </div>
+
+        <div class="home-editorial-projects">
+          <!-- KAHARA -->
+          <article class="home-editorial-featured">
+            <a
+              class="home-editorial-image"
+              href="projects/kahara.html"
+              aria-label="Se projektet Kahara Jewelry"
+            >
+              <img
+                src="images/instagrid.png"
+                alt="Instagram-grid med visuelt content fra Kahara Jewelry"
+              />
+            </a>
+
+            <div class="home-editorial-copy">
+              <p class="eyebrow">Visuelt design · Content · E-commerce</p>
+              <h3>Kahara Jewelry</h3>
+              <p class="home-editorial-description">
+                Et smykkebrand, hvor jeg arbejdede med visuelt content,
+                produktbilleder, SoMe og Shopify.
+              </p>
+              <a class="btn home-project-btn" href="projects/kahara.html"
+                >Se projekt</a
+              >
+            </div>
+          </article>
+
+          <div class="home-editorial-secondary-grid">
+            <!-- OVARTACI -->
+            <article class="home-editorial-card">
+              <a
+                class="home-editorial-image"
+                href="projects/ovartaci.html"
+                aria-label="Se projektet Museum Ovartaci"
+              >
+                <img
+                  src="images/ovartaci.jpg"
+                  alt="Museum Ovartaci – interaktiv quizoplevelse"
+                />
+              </a>
+
+              <div class="home-editorial-copy">
+                <p class="eyebrow">UX · UI · Frontend</p>
+                <h3>Museum Ovartaci</h3>
+                <p class="home-editorial-description">
+                  En interaktiv quizoplevelse, der gør museumsbesøget mere
+                  engagerende.
+                </p>
+                <a class="btn home-project-btn" href="projects/ovartaci.html"
+                  >Se projekt</a
+                >
+              </div>
+            </article>
+
+            <!-- FISHGAME -->
+            <article class="home-editorial-card">
+              <a
+                class="home-editorial-image"
+                href="projects/fishgame.html"
+                aria-label="Se projektet Fishgame"
+              >
+                <img
+                  src="images/fishgame.jpg"
+                  alt="Fishgame – interaktiv digital oplevelse for børn"
+                />
+              </a>
+
+              <div class="home-editorial-copy">
+                <p class="eyebrow">UX · Interaktionsdesign · Brugertest</p>
+                <h3>Fishgame</h3>
+                <p class="home-editorial-description">
+                  Et legende digitalt univers, hvor børn kan tegne deres egen
+                  fisk.
+                </p>
+                <a class="btn home-project-btn" href="projects/fishgame.html"
+                  >Se projekt</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMMER & VÆRKTØJER -->
+      <section class="home-tools-feature section-pad reveal">
+        <div class="home-tools-feature-head">
+          <p class="eyebrow">Programmer & værktøjer</p>
+          <h2>Værktøjer jeg arbejder med</h2>
+        </div>
+
+        <div class="home-tools-feature-grid">
+          <article class="home-tool">
+            <div class="home-tool-mark home-tool-mark--adobe">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Adobe%20Creative%20Cloud%20mark.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <h3>Adobe Creative Suite</h3>
+          </article>
+
+          <article class="home-tool">
+            <div class="home-tool-mark home-tool-mark--figma">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <h3>Figma</h3>
+          </article>
+
+          <article class="home-tool">
+            <div class="home-tool-mark home-tool-mark--vscode">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Visual%20Studio%20Code%201.35%20icon.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <h3>VS Code</h3>
+          </article>
+
+          <article class="home-tool">
+            <div class="home-tool-mark home-tool-mark--wp">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/WordPress%20blue%20logo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <h3>WordPress</h3>
+          </article>
+
+          <article class="home-tool">
+            <div class="home-tool-mark home-tool-mark--shopify">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shopify%20logo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <h3>Shopify</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-contact-simple section-pad reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Vil du høre mere?</h2>
+        <p>
+          Jeg er altid åben for en snak om praktik, design og kreative
+          projekter.
+        </p>
+        <a class="home-contact-mail" href="kontakt.html">
+          Kontakt mig <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer section-pad">
+      <p class="eyebrow">Portfolio 2026</p>
+      <div class="footer-grid">
+        <h2>Mica Boye</h2>
+        <div>
+          <p>
+            Multimediedesignstuderende med fokus på visuelt design, content og
+            digitale oplevelser.
+          </p>
+          <a class="btn light" href="kontakt.html">Kontakt mig</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation i sidefod">
+        <a href="index.html">Forside</a><a href="projekter.html">Projekter</a
+        ><a href="om-mig.html">Om mig</a><a href="kontakt.html">Kontakt</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
