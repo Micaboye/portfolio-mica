@@ -4800,9 +4800,8 @@ img {
 }
 
 @media (max-width: 760px) {
-  .arrow,
-  .link-arrow,
-  .btn-arrow {
-    display: none !important;
+  a {
+    font-family: "DM Sans", sans-serif !important;
+    font-variant-emoji: text;
   }
 }
