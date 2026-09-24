@@ -4100,3 +4100,701 @@ img {
     margin-bottom: 2.5rem !important;
   }
 }
+/* =========================================
+   MOBILVERSION
+========================================= */
+
+@media (max-width: 760px) {
+  /* GENERELT */
+  .section-pad {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  p {
+    font-size: 0.96rem;
+  }
+
+  /* =========================
+     NAVIGATION
+  ========================= */
+
+  .site-header {
+    min-height: 64px;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-btn {
+    display: block;
+    position: relative;
+    z-index: 60;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 55;
+
+    padding: 1.4rem 1.25rem 1.7rem;
+
+    background: rgba(245, 242, 236, 0.98);
+    border-bottom: 1px solid var(--line);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 1.05rem;
+  }
+
+  /* =========================
+     GENEREL TYPOGRAFI
+  ========================= */
+
+  .hero h1,
+  .page-hero h1,
+  .case-hero h1 {
+    font-size: clamp(3.2rem, 15vw, 5rem) !important;
+    line-height: 0.94;
+    overflow-wrap: anywhere;
+  }
+
+  .page-hero > p:last-child,
+  .case-hero > p:last-child {
+    margin-top: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  /* =========================
+     FORSIDE
+  ========================= */
+
+  .hero-home-grid,
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-home {
+    min-height: auto !important;
+  }
+
+  .hero-home-grid {
+    gap: 2.25rem !important;
+  }
+
+  .hero-name {
+    font-size: clamp(4.5rem, 24vw, 7rem) !important;
+    line-height: 0.78 !important;
+  }
+
+  .hero-home-copy h2 {
+    font-size: clamp(1.65rem, 8vw, 2.4rem) !important;
+  }
+
+  .hero-home-lead {
+    max-width: none !important;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .hero-home-portrait {
+    width: 100%;
+  }
+
+  .hero-portrait-image {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 5;
+  }
+
+  /* LIDT OM MIG PÅ FORSIDEN */
+
+  .home-about-feature {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .home-about-feature-image {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 5;
+  }
+
+  .home-about-feature-copy h2 {
+    font-size: clamp(2.7rem, 13vw, 4.2rem) !important;
+    line-height: 0.95;
+  }
+
+  .home-about-feature-copy h2 br {
+    display: none;
+  }
+
+  /* UDVALGTE PROJEKTER */
+
+  .home-selected-head {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .home-selected-head h2 {
+    font-size: clamp(2.4rem, 11vw, 3.7rem) !important;
+  }
+
+  .home-editorial-featured {
+    grid-template-columns: 1fr !important;
+    gap: 1.4rem !important;
+  }
+
+  .home-editorial-image {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .home-editorial-copy {
+    padding: 0 !important;
+  }
+
+  .home-editorial-secondary-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.75rem !important;
+  }
+
+  /* =========================
+     PROJEKTOVERSIGT
+  ========================= */
+
+  .page-hero {
+    padding-top: 3rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .projects {
+    padding-top: 1rem !important;
+  }
+
+  .projects-list {
+    gap: 4rem !important;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .project-img {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-img--ovartaci {
+    aspect-ratio: auto !important;
+  }
+
+  .project-img--ovartaci img {
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .project-content {
+    padding: 0 !important;
+  }
+
+  .meta-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
+  }
+
+  /* =========================
+     CASESIDER
+  ========================= */
+
+  .case-hero {
+    min-height: auto !important;
+    padding-top: 3rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .case-image {
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .case-visual {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .editorial-meta {
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .editorial-meta dl {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .editorial-meta dl > div {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .editorial-case-sections {
+    padding-top: 2rem !important;
+  }
+
+  .case-step,
+  .case-step.case-step-reverse {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    margin-bottom: 4.5rem !important;
+  }
+
+  .case-step-copy {
+    order: 1 !important;
+  }
+
+  .case-step-visual {
+    order: 2 !important;
+    width: 100%;
+  }
+
+  .case-step-copy h2 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem) !important;
+    line-height: 0.98;
+  }
+
+  .case-step-visual .image-box {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .design-principles {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* KAHARA */
+
+  .kahara-collage,
+  .kahara-social-grid {
+    min-height: 0 !important;
+    height: auto !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 0.75rem !important;
+  }
+
+  .kahara-collage-main,
+  .kahara-social-main {
+    grid-column: 1 / -1;
+  }
+
+  .kahara-collage figure,
+  .kahara-social-grid figure {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .kahara-collage img,
+  .kahara-social-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* OVERLAPPENDE FRONTEND-BILLEDER */
+
+  .frontend-overlap {
+    min-height: 0 !important;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .frontend-overlap .frontend-image {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* =========================
+     OM MIG
+  ========================= */
+
+  .about-reference-hero {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding-top: 3rem !important;
+  }
+
+  .about-reference-image {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: 4 / 5;
+  }
+
+  .about-reference-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-reference-intro h1 {
+    font-size: clamp(3.3rem, 16vw, 5rem) !important;
+  }
+
+  .about-reference-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.45rem;
+  }
+
+  .about-reference-design,
+  .about-reference-personal {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .about-reference-design-copy h2,
+  .about-reference-personal-heading h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem) !important;
+  }
+
+  .about-reference-design-copy h2 br,
+  .about-reference-personal-heading h2 br {
+    display: none;
+  }
+
+  .about-reference-word {
+    font-size: clamp(5rem, 27vw, 9rem) !important;
+    overflow: hidden;
+  }
+
+  /* REJSEBILLEDER */
+
+  .about-personal-images {
+    width: 100%;
+    height: auto !important;
+
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 0.75rem;
+
+    max-width: none !important;
+  }
+
+  .about-personal-image--one,
+  .about-personal-image--two {
+    position: static !important;
+    width: 100% !important;
+    height: 300px !important;
+
+    transform: none !important;
+    object-fit: cover;
+  }
+
+  .about-personal-image--two {
+    height: 240px !important;
+    align-self: end;
+  }
+
+  /* =========================
+     KONTAKT
+  ========================= */
+
+  .contact-new-intro h1 {
+    font-size: clamp(3.6rem, 18vw, 5.5rem) !important;
+  }
+
+  .contact-new-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .contact-new-info,
+  .contact-new-mail {
+    min-width: 0;
+  }
+
+  .contact-new-mail {
+    padding: 2rem 1.25rem !important;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  .footer {
+    padding-top: 3.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .footer-grid h2 {
+    font-size: clamp(3rem, 15vw, 5rem) !important;
+  }
+
+  .footer-nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem !important;
+  }
+
+  .btn,
+  .button-link {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+/* EKSTRA SMÅ MOBILER */
+
+@media (max-width: 380px) {
+  .section-pad {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .site-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-name {
+    font-size: 4.15rem !important;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .about-personal-images {
+    grid-template-columns: 1fr;
+  }
+
+  .about-personal-image--one,
+  .about-personal-image--two {
+    height: auto !important;
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* =========================================
+   MOBIL – BILLEDER
+   Bevar hele billedet og originalt format
+========================================= */
+
+@media (max-width: 760px) {
+  /* Generelt */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* FORSIDE – PORTRÆT */
+
+  .hero-portrait-image {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+
+  .hero-portrait-image img {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* FORSIDE – OM MIG */
+
+  .home-about-feature-image {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+
+  .home-about-feature-image img {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* FORSIDE – PROJEKTBILLEDER */
+
+  .home-editorial-image {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    overflow: hidden;
+  }
+
+  .home-editorial-image img {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* PROJEKTOVERSIGT */
+
+  .project-img,
+  .project-img--ovartaci {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+
+  .project-img img,
+  .project-img--ovartaci img {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* CASE – STORT TOPBILLEDE */
+
+  .case-visual {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+
+  .case-visual img {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* CASE – BILLEDER GENNEM SIDEN */
+
+  .case-step-visual .image-box {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+
+  .case-step-visual .image-box img {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* KAHARA */
+
+  .kahara-collage,
+  .kahara-social-grid {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .kahara-collage figure,
+  .kahara-social-grid figure {
+    height: auto !important;
+  }
+
+  .kahara-collage img,
+  .kahara-social-grid img {
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* OM MIG – STORT PORTRÆT */
+
+  .about-reference-image {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+
+  .about-reference-image img {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  /* OM MIG – REJSEBILLEDER */
+
+  .about-personal-images {
+    height: auto !important;
+  }
+
+  .about-personal-image--one,
+  .about-personal-image--two {
+    position: static !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Skjul det andet portrætbillede på mobil */
+  .home-about-feature-image {
+    display: none !important;
+  }
+}
