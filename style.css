@@ -4798,3 +4798,11 @@ img {
     display: none !important;
   }
 }
+
+@media (max-width: 760px) {
+  .arrow,
+  .link-arrow,
+  .btn-arrow {
+    display: none !important;
+  }
+}
